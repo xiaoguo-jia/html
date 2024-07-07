@@ -1,72 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="author" content="xiaoguo" />
-		<meta name="description" content="this page contains what i am learning" />
-		<title>my first web page</title>
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
-		<link rel="stylesheet" href="main.css" type="text/css" />
-	</head>
 
-	<body>
-		<h1>hello world!</h1>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="xiaoguo">
+	<meta name="description" content="this page contains what i am learning">
+	<title>my first web page</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="main.css" type="text/css">
+</head>
 
-		<hr />
+<body>
+	<header>
+		<h1>hello world! plans for this year</h1>
 
-		<h2>i want to go home</h2>
-		<p>this is my first webpage.</p>
+		<nav aria-label="primary-navigation">
+			<ul>
+				<li>
+					<a href="#htmlsection">learning html</a>
+				</li>
+				<li>
+					<a href="#vacationsection">planning a vacation</a>
+				</li>
+				<li>
+					<a href="#contact">contact me</a>
+				</li>
+			</ul>
+		</nav>
 
-		<h3>schedule</h3>
-		<p>that is all</p>
-		<ol>
-			<li>... goodbye</li>
-			<li>... i swear i am leaving now</li>
-			<li>... i am still here</li>
-			<li>
-				... abbreviation practice: <abbr title="loss of my life"> loml </abbr>
-			</li>
-		</ol>
+	</header>
 
-		<hr />
+	<hr>
 
-		<h2>words after the horizonal rule</h2>
-		<p>i am tired. i am never not tired <em> tired </em></p>
-		<p>i would pay 1 
-			<abbr title="$">
-				<a href="https://www.google.com/search?q=dollar&rlz=1C1JZAP_enUS1019US1019&oq=dollar&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzcxNWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">
-					dollar</a></abbr> to sleep right now</p>
+	<main>
+		<article id="htmlsection">
+			<h2>i want to go home</h2>
+			<p>this is my first webpage.</p>
+			<section>
+				<h3>cats</h3>
+				<img src="images/9cats.png" alt="this is an image of 9 cats" title="i am allergic to cats" width="150"
+					height="150">
+				<figure>
+					<figcaption>figures can be more then just images</figcaption>
+					<p><code>&lt;h1&gt;hello world&lt;h1&gt;</code></p>
 
-		<h3>still typing for practice</h3>
+				</figure>
+			</section>
+			<section>
+				<h3>schedule</h3>
+				<p>that is all</p>
+				<ol>
+					<li>... goodbye</li>
+					<li>... i swear i am leaving now</li>
+					<li>... i am still here</li>
+					<li>
+						... abbreviation practice: <abbr title="loss of my life"> loml </abbr>
+					</li>
+				</ol>
+				<aside>
+					<!--click and it shows the answer dropdown type-->
+					<details>
+						<summary>guess <mark>when</mark> i want to die </summary>
+						<p>everyday i start at <time datetime="08:00">8 am</time> and i want to die for <time
+								datetime="PT3H">16 hours</time></p>
+					</details>
+				</aside>
+				<br>
+				<table>
+					<caption>what i do in a day</caption>
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th scope="col">time</th>
+							<th scope="col">activity</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<th scope="row">morning</th>
+							<td>
+								<time datetime="08:00">8 am</time>-<time datetime="11:00">11 am</time>
+							</td>
+							<td>write code</td>
+						</tr>
+
+						<tr>
+							<th scope="row">break</th>
+							<td>
+								<time datetime="11:00">11 am</time>-<time datetime="12:00">12 pm</time>
+							</td>
+							<td>want to die</td>
+						</tr>
+
+						<tr>
+							<th scope="row">afternoon</th>
+							<td>
+								<time datetime="12:00">12 am</time>-<time datetime="17:00">5 pm</time>
+							</td>
+							<td>study</td>
+						</tr>
+
+						<tr>
+							<th scope="row">evening</th>
+							<td rowspan="2">all other times</td>
+							<td>free time</td>
+						</tr>
+
+						<tr>
+							<th scope="row">night</th>
+							<td>sleep</td>
+						</tr>
+					</tbody>
+
+					<tfoot>
+						<tr>
+							<td colspan="3">that is what i do everyday, i want to die so bad... not actually do not
+								report me</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</article>
+
+		<hr>
+
+		<!--changed section to article but they are the same i think he said that article just has info-->
+		<article id="vacationsection">
+			<h2>words after the horizonal rule, now planning a vacation section i guess</h2>
+			<p>i am tired. i am never not tired <em> tired </em></p>
+			<p>i would pay 1
+				<abbr title="$">
+					<a
+						href="https://www.google.com/search?q=dollar&rlz=1C1JZAP_enUS1019US1019&oq=dollar&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzcxNWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">
+						dollar</a></abbr> to sleep right now
+			</p>
+
+			<section>
+				<h3>still typing for practice</h3>
+				<p>
+					when they are separate paragraphs,
+					<strong>are separated by a blank line</strong>
+				</p>
+				<!--you have to type the first four characters of this and then it will autocomplete-->
+
+				<h3>places</h3>
+				<ul>
+					<li>
+						<p>my house</p>
+						<figure>
+							<img src="images/cathouse.png" alt="cat in a mushroom house" title="this could be me"
+								width="150" height="150" loading="lazy">
+							<figcaption>cat in a house</figcaption>
+						</figure>
+					</li>
+					<li>
+						<p>here is an address:</p>
+						<address>
+							Margaritaville Island Reserve Riviera Cancun<br>
+							Bahia Petempich Puerto Morelos, Mexico <br>
+							Colonia Morelos, Mexico 77580
+						</address>
+						<figure>
+							<img src="images/catonbeach.png" alt="cat on a beach" title="cat on a rock by the water"
+								loading="lazy" width="150" height="100">
+							<figcaption>cat on a rock on the beach maybe</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</section>
+
+			<!--things to not do in html is add div you should use when you use with css for styling-->
+			<!--there is no semantic meaning-->
+			<section>
+				<h3>other places</h3>
+				<dl>
+					<dt>north pole</dt>
+					<dd>something something</dd>
+
+				</dl>
+			</section>
+		</article>
+
+		<hr>
+
+		<article id="contact">
+			<h2>contact me</h2>
+			<p>i do not want to hear from you</p>
+			<form action="https://httpbin.org/get" method="get">
+				<fieldset>
+					<legend>personal info</legend>
+
+					<p>
+						<label for="firstname">first name</label>
+						<!--placeholder will disappear when user actually starts to type-->
+						<!--can add autofocus but because this form is at the bottom i took it out-->
+						<!--but what it does is put the cursor there automatically when the page loads-->
+						<input type="text" name="firstname" id="firstname" placeholder="xiaoguo" autocomplete="on"
+							required>
+					</p>
+					<p>
+						<label for="lastname">last name</label>
+						<input type="text" name="lastname" id="lastname" placeholder="jia" autocomplete="on" required>
+					</p>
+					<p>
+						<label for="password">password</label>
+						<input type="password" name="password" id="password" placeholder="secret" autocomplete="on"
+							required>
+					</p>
+					<p>
+						<label for="phone">phone</label>
+						<input type="tel" name="phone" id="phone" placeholder="000-000-0000" autocomplete="on"
+							pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+					</p>
+					<p>
+						<label for="decade">favorite decade</label>
+						<input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+					</p>
+					<!-- <p>
+					<label for="coffee">favorite coffee</label>
+					<select name="coffee" id="coffee" multiple size="5">
+						<optgroup label="coffee">
+							<option value="regular">regular</option>
+							<option value="iced">iced</option>
+						</optgroup>
+						<optgroup label="espresso drinks">
+							<option value="latte">latte</option>
+							<option value="cappuccino">cappuccino</option>
+							<option value="cortado">cortado</option>
+							<option value="americano">americano</option>
+						</optgroup>
+						<option value="other">other</option>
+					</select>
+				</p> -->
+					<p>
+						<label for="coffee">favorite coffee</label>
+						<input type="text" name="coffee" id="coffee" list="coffee-list">
+						<datalist id="coffee-list">
+							<option value="coffee">
+							<option value="latte">
+							<option value="espresso">
+							<option value="cappuccino">
+							<option value="cortado">
+							<option value="americano">
+						</datalist>
+					</p>
+				</fieldset>
+
+				<br>
+
+				<fieldset>
+					<!-- can  only select one because they have the same name field -->
+					<legend>fav foods</legend>
+					<p>
+						<input type="radio" name="food" id="tacos" value="tacos">
+						<label for="tacos">tacos</label>
+					</p>
+					<p>
+						<input type="radio" name="food" id="pizza" value="pizza">
+						<label for="pizza">pizza</label>
+					</p>
+					<p>
+						<input type="radio" name="food" id="other" value="other">
+						<label for="other">other</label>
+					</p>
+				</fieldset>
+
+				<br>
+
+				<fieldset>
+					<legend>pets</legend>
+					<p>
+						<input type="checkbox" name="pets" id="dog" value="dog">
+						<label for="dog">dog</label>
+					</p>
+					<p>
+						<input type="checkbox" name="pets" id="cat" value="cat">
+						<label for="cat">cat</label>
+					</p>
+					<p>
+						<input type="checkbox" name="pets" id="fish" value="fish">
+						<label for="fish">fish</label>
+					</p>
+					<p>
+						<input type="checkbox" name="pets" id="otherpet" value="otherpet">
+						<label for="otherpet">other</label>
+					</p>
+				</fieldset>
+
+				<br>
+
+				<fieldset>
+					<legend>send me a note</legend>
+					<label for="message">your message</label>
+					<br>
+					<textarea name="message" id="message" cols="30" rows="10"
+						placeholder="type your message here"></textarea>
+				</fieldset>
+
+				<br>
+
+				<!-- submits info as git request and puts the info in the url -->
+				<button type="submit">submit</button>
+				<!-- submits the information with a post to a url -->
+				<button type="submit" formaction="https://httpbin.org/post" formmethod="post">post</button>
+				<button type="reset">reset</button>
+			</form>
+
+		</article>
+	</main>
+
+	<hr>
+
+	<footer>
 		<p>
-			when they are separate paragraphs,
-			<strong>are separated by a blank line</strong>
+			&lt;&lt;&lt; &copy; <a href="about.html">xiaoguo jia</a> &gt;&gt;&gt;
 		</p>
-		<!--you have to type the first four characters of this and then it will autocomplete-->
+		<p>
+			<a href="#">back to top</a>
+		</p>
+	</footer>
+</body>
 
-		<h3>places</h3>
-		<ul>
-			<li><p>my house</p></li>
-			<li>
-				<p>here is an address:</p>
-				<address>
-					Margaritaville Island Reserve Riviera Cancun<br />
-					Bahia Petempich Puerto Morelos, Mexico <br />
-					Colonia Morelos, Mexico 77580
-				</address>
-			</li>
-		</ul>
-
-        <h3>other places</h3>
-        <dl>
-            <dt>north r</dt>
-
-        </dl>
-
-
-
-		<hr />
-
-		&lt;&lt;&lt; &copy; <a href="about.html">xiaoguo jia</a> &gt;&gt;&gt;
-	</body>
 </html>
